@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "node index.js",
     "start": "node index.js"
@@ -18,7 +21,9 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.14.1",
-    "nodemon": "^3.1.10",
     "to_do_raweng": "file:.."
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

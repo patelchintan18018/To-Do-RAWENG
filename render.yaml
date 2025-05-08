@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: to-do-raweng
+    env: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm run start
+    rootDir: .
+    envVars:
+      - key: NODE_VERSION
+        value: 18.20.2
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        value: mongodb+srv://patelchintan18180:ekNnf3XOWBMDVmSZ@cluster0.9xspabf.mongodb.net/

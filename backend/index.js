@@ -4,10 +4,12 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import authRoutes from './routes/auth.js';
 import taskRoutes from './routes/tasks.js';
+import path from 'path';
 
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
+const __dirname = path.resolve();
 
 app.use(cors({
     origin :"http://localhost:5173",
